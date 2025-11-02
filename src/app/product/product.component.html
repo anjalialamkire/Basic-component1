@@ -1,0 +1,31 @@
+
+<p class="alert alert-primary">
+    This is Product
+    
+    <strong>{{productName}}</strong>
+    <strong>{{productId}}</strong>
+</p>
+
+<p class="alert alert-success">
+    Hello there I'm {{userInfo.fname}} {{userInfo.lname}} from {{userInfo. nativeplace}} I am {{userInfo.profile}}
+</p>
+
+<p class="alert alert-warning">
+    Hello there I'm {{userInfo2.fname}} {{userInfo2.lname}} from {{userInfo2.nativeplace}} I am {{userInfo2.profile}}
+</p>
+
+<ul class="list-group">
+    <li 
+    *ngFor="let skill of skills"
+    class="list-group-item">
+    I Love {{skill}}
+    </li>
+</ul>
+
+<ul class="list-group">
+    <li *ngFor="let skill of skills1"
+    class="list-group-item">
+    I Love {{skill}}
+</li>
+</ul>
+<hr>
