@@ -4,7 +4,7 @@ import { Istudent } from "../models/product";
 
 @Component({
     selector:'app-student',
-    templateUrl:'./student.Component.html',
+    templateUrl:'./student.component.html',
 
     styleUrls:['./student.component.scss']
 })
@@ -32,6 +32,7 @@ export class StudentComponent{
         email:'john@Doe.com',
         contact:12345865
     },
+
 
    
    ]
