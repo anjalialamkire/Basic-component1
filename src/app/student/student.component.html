@@ -1,15 +1,32 @@
 
-<h3>Student Info</h3>
+<h3 class="text-center">Student Info</h3>
 
-<table class="table table-bordered">
-    <thead>
+<table class="table table-dark">
+    <thead class="table table-danger">
         <tr>
             <th>Sr No</th>
-            <th>FullName</th>
+            <th >FullName</th>
             <th>Email</th>
             <th>IsActive</th>
+            <th>Contact</th>
             <th>Edit</th>
             <th>Remove</th>
         </tr>
     </thead>
+
+    <tbody>
+        <tr *ngFor ="let std of stdArr; let i=index">
+            <td>{{i + 1}}</td>
+            <td>{{std.fname}}{{std.lname}}</td>
+            <td>{{std.email}}</td>
+            <td>{{std.isActive}}</td>
+            <td>{{std.contact}}</td>
+            <td class="text-center">
+                <button class="btn btn-sm bg-success">Edit</button>
+            </td>
+            <td class="text-center">
+                <button class="btn btn-sm bg-danger">Remove</button>
+            </td>
+        </tr>
+    </tbody>
 </table>

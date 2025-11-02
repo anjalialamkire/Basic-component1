@@ -14,6 +14,15 @@
     Hello there I'm {{userInfo2.fname}} {{userInfo2.lname}} from {{userInfo2.nativeplace}} I am {{userInfo2.profile}}
 </p>
 
+<p class="alert alert-primary">
+    Hello there I'm {{userInfo3.fname}} {{userInfo3.lname}} from {{userInfo3.nativeplace}} I am {{userInfo3.profile}}
+</p>
+
+<p class="alert alert-danger">
+    Hello there I'm {{userInfo4.fname}} {{userInfo4.lname}} from {{userInfo4.nativeplace}} I am {{userInfo4.profile}}
+</p>
+
+
 <ul class="list-group">
     <li 
     *ngFor="let skill of skills"
@@ -27,5 +36,13 @@
     class="list-group-item">
     I Love {{skill}}
 </li>
+</ul>
+
+<ul class="list-group">
+    <li 
+    *ngFor="let skill of skills2"
+    class="list-group-item">
+    I Like {{skill}}
+    </li>
 </ul>
 <hr>

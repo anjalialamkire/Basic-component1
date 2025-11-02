@@ -1,0 +1,25 @@
+
+<h3 class="text-center">Skill Card</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mb-4 h-100" *ngFor ="let post of postsArr">
+         <div class="card">
+                <div class="card-header bg-info">
+                    <h3 class="m-0">{{post.title}}</h3>
+             </div>
+              
+             <div class="card-body">
+                <p class="m-0">
+                  {{post.content}}
+                </p>
+             </div>
+         
+          <div class="card-footer d-flex justify-content-between">
+               <button class="btn btn-sm bg-success">Edit</button>
+               <button class="btn btn-sm bg-danger">Remove</button>
+           </div>
+
+         </div>
+        </div>
+    </div>
+</div>

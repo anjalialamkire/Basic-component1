@@ -15,18 +15,33 @@ export class ProductComponent1{
     fname :'Jhon',
     lname:'Doe',
     nativeplace:'Mumbai',
-    profile:'FullStackDeveloper'
+    profile:'Full Stack Developer'
    }
 
    userInfo2 ={
     fname:'May',
     lname:'Doe',
     nativeplace:'pune',
-    profile:'MeanstackDeveloper'
+    profile:'Mean stack Developer'
    }
 
+   userInfo3={
+    fname :'shrushti',
+    lname:'patil',
+    nativeplace:'delhi',
+    profile:'Engineer'
+   }
+
+   userInfo4 ={
+    fname:'vaishnavi',
+    lname:'biradar',
+    nativeplace:'hydrabad',
+    profile:'Doctor'
+   }
 
     skills : Array<string> = ['HTML','CSS','JS']
     skills1 :Array<string>=['React','Angular','DSA']
+
+    skills2:Array<string>=['pizza','Burger','Wadapav']
      
 }
